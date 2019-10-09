@@ -109,3 +109,7 @@ the Django development webserver (see above) then the links below should work:
 [4]: http://127.0.0.1:8000/products/books/an-example-book/
 
 
+## About
+
+Home: https://github.com/philgyford/django-url-namespace-example  
+By: Phil Gyford (phil@gyford.com)

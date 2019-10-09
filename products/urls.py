@@ -1,7 +1,7 @@
 from django.urls import include, path
 
-from . import views
 from books import urls as books_urls
+from . import views
 
 
 app_name = "products"

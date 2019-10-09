@@ -1,10 +1,10 @@
 # Django URL namespaces example
 
-An example Django project to demonstrate the use of nested URL namespaces, for
+An example Django 2.2 project to demonstrate the use of nested URL namespaces, for
 [this Stackoverflow question](https://stackoverflow.com/questions/12683494/defining-nested-namespaces-in-a-urlconf-for-reversing-django-urls-does-anyon/43459322).
 
-This is a very simple project, with no models or admin and extremely simple
-views. It's purely for demonstrating how to nest URls.
+This is a very simple project, with no models or admin, and extremely simple
+views. It's purely for demonstrating how to nest URLs and their namespaces.
 
 It includes the [django-extensions](https://django-extensions.readthedocs.io/en/latest/) module which isn't used in the code - it's purely so that if you want to view
 the project's URLs you can do so by running its handy `show_urls` command:

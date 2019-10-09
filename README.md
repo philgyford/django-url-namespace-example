@@ -92,7 +92,7 @@ The result is that we have defined the following URLs, each linked to a view,
 and each identified by a specific URL name. If you're running the site with
 the Django development webserver (see above) then the links below should work:
 
-| URL                            | View                 | Name                         |
+| URL                            | View                 | URL Name                     |
 | ------------------------------ | -------------------- | ---------------------------- |
 | [`/`][1]                       | `products.site_home` | `home`                       |
 | [`/products/`][2]              | `products.index`     | `products:product_index`     |
@@ -103,6 +103,27 @@ the Django development webserver (see above) then the links below should work:
 [2]: http://127.0.0.1:8000/products/
 [3]: http://127.0.0.1:8000/products/books/
 [4]: http://127.0.0.1:8000/products/books/an-example-book/
+
+
+This all means that if we want to refer to any URL we can do so using its full
+URL name and the [`reverse()`](https://docs.djangoproject.com/en/2.2/ref/urlresolvers/) 
+function. For example:
+
+```python
+from django.url import reverse
+
+print reverse("home")
+# '/'
+
+print reverse("products:product_index")
+# '/products/'
+
+print reverse("products_books:book_index")
+# '/products/books/'
+
+print reverse("products:books:book_detail", kwargs={"book_slug": "my-great-book"})
+# '/products/books/my-great-book/'
+```
 
 
 ## About

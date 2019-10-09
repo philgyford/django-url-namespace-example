@@ -121,8 +121,8 @@ print reverse("products:product_index")
 print reverse("products:books:book_index")
 # '/products/books/'
 
-print reverse("products:books:book_detail", kwargs={"book_slug": "my-great-book"})
-# '/products/books/my-great-book/'
+print reverse("products:books:book_detail", kwargs={"book_slug": "my-book"})
+# '/products/books/my-book/'
 ```
 
 
